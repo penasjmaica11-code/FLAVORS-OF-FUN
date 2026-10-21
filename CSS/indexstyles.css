@@ -1,0 +1,343 @@
+/*FILIPINO DISH*/
+*{
+  margin:0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+} 
+#more,#more1,#more2,#more3,#more4,#more5,#more11{
+  display: none;
+}
+
+/*droptable*/
+.nutrition-container,.nutrition-container1,
+.nutrition-container2,.nutrition-container3,
+.nutrition-container4,.nutrition-container5 {
+ 
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  margin: auto;
+}
+.toggle-button ,.toggle-button1,
+.toggle-button2,.toggle-button3,
+.toggle-button4,.toggle-button5{
+  background-color: #040404;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-family: serif;
+}
+.nutrition-facts, .nutrition-facts1,
+.nutrition-facts2,.nutrition-facts3,
+.nutrition-facts4,.nutrition-facts5{
+  display: none;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: white;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+/**/
+.button{
+  border-radius: 20px;
+  background-color: #060606;
+  height: 30px;
+  width: 105px;
+  color: white;
+ margin-bottom: 15px;
+}
+.food{
+  background-image: url('../img/pinoydish.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.recipe {
+  padding-top: 60px;
+  }
+.container{
+  box-sizing: border-box;
+  padding:9px 5px 5px 45px;
+  margin-right: 50px;
+margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.2px);
+-webkit-backdrop-filter: blur(11.2px);
+border: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+nav,.header{
+  display: flex;
+  flex-direction: column;
+}
+/*NAVIGATION*/
+nav{
+padding-top: 15px;
+padding-bottom: 20px;
+background-color: #030303;
+margin-bottom: 20px;
+}
+nav ul {
+  list-style-type: none;
+   display: flex;
+  flex-direction: row;
+ right:10px;
+  width: 100%;
+z-index: 5;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 1em 2em ;
+  height: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: font-size 0.3s ease-in-out; 
+}
+nav ul li a:hover {
+  font-size: 1.5em;
+  color: #0a9692;
+}
+nav li:hover, nav li:focus{
+  transform: scale(0.5s);
+}
+
+.header{
+    font-size: 20px;
+    border: none;
+    color: #f9f9f9;
+    padding-left: 100px;
+}
+
+
+/* RECIPE */
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.flex-container > div{
+  flex: 0 1 520px;
+  min-width: 0;
+}
+
+.h1{
+text-align: center;
+font-size:50px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.foodimg{
+  box-sizing: border-box;
+  flex: 0 1 320px;
+  width: 320px;
+  max-width: 40%;
+  height: 240px;
+  object-fit: cover;
+  padding: 12px;
+  border: 1px solid #BFBFBF;
+  background-color: rgb(0, 5, 4);
+  box-shadow: 10px 10px 5px #68646474;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.foodish{
+  padding-left: 100px;
+  font-family: serif;
+  padding-bottom: 20px;
+}
+.foodish p{
+  font-family: serif;
+  color: white;
+}
+.foodimg {
+  transition: transform 0.2s; 
+}
+
+.foodimg:hover {
+  transform: scale(1.1); 
+}
+
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foodimg {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+p{
+  text-justify: inter-word;
+  margin-top: 35px;
+  font-size: 20px;
+}
+h2 {
+  margin-top: 40px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: #36bac6;
+  text-shadow: 1px 1px #040404;
+  text-justify: inter-word;
+  font-family: comic,cursive;
+  padding-top: 30px;
+}
+li{
+  color: #fff;
+}
+h4{
+  font-size: 24px;
+  color: #f966b7;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ol {
+  counter-reset: step;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ol li {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+ol li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f966b7;
+  color: #fff;
+  margin-left: -30px;
+  
+}
+
+.dropbtn {
+  background-color: #060606ee;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow:0px 5px 5px 3px  rgba(0,0,0,0.2);
+z-index: 5;
+}
+
+.dropdown {
+  display: inline-block;
+ position: fixed;
+z-index: 999;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height:200px;
+  overflow: scroll;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Comic, cursive;
+}
+
+.dropdown-content a:hover {
+  background-color: #45d7b7
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  padding-bottom: 15px;
+  background-color: #084432;
+}
+/*back to top*/
+#MyButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(0, 0, 0); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#MyButton:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/* FOOTER */
+footer{
+padding-bottom: 20px;
+}

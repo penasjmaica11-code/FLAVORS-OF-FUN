@@ -1,0 +1,309 @@
+
+  /*KOREAN DELIGHTS STYLE*/
+  * { 
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#more6,#more7,#more8,#more9,#more10{
+  display: none;
+}
+/*droptable*/
+.nutrition-container6,.nutrition-container7,
+.nutrition-container8,.nutrition-container9,
+.nutrition-container10 {
+ 
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  margin: auto;
+}
+.toggle-button6,.toggle-button7,
+.toggle-button8,.toggle-button9,
+.toggle-button10{
+  background-color: #050505;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-family: serif;
+}
+.nutrition-facts6, .nutrition-facts7,
+.nutrition-facts8,.nutrition-facts9,
+.nutrition-facts10{
+  display: none;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: #050505;
+  background-color: white;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.button{
+  border-radius: 20px;
+  background-color: #060606;
+  height: 30px;
+  width: 105px;
+  color: white;
+}
+
+body{
+background-image: url('../img/koreanstirfried.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.flex-container > div{
+  flex: 0 1 520px;
+  min-width: 0;
+}
+img{
+max-width: 100%;
+}
+.foodimg{
+box-sizing: border-box;
+flex: 0 1 320px;
+width: 320px;
+max-width: 40%;
+height: 240px;
+object-fit: cover;
+padding: 12px;
+border: 1px solid #BFBFBF;
+background-color: rgb(0, 5, 4);
+box-shadow: 10px 10px 5px #68646474;
+
+margin: 15px 0;
+border-radius: 20px;
+}
+.foodimg {
+transition: transform 0.2s; /* Smooth transition */
+}
+
+.foodimg:hover {
+transform: scale(1.1); /* Make the image slightly larger */
+}
+
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foodimg {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+.foodish{
+    font-family: serif;
+   color: #ffffff;
+   margin-left: 50px;
+  padding-bottom: 20px;
+}
+
+p{
+  font-size: 20px;
+  margin-top: 45px;
+  text-justify: inter-word;
+}
+h2{
+  margin-top: 50px;
+  margin-right: 40px;
+  color: rgb(246, 5, 121);
+  text-shadow: 1px 1px #f9f8f8;
+  
+  font-family: cursive;
+}
+h3{
+    color:#40eeee
+}
+/*NAVIGATION*/
+nav{
+padding-top: 15px;
+padding-bottom: 20px;
+background-color: #060606;
+margin-bottom: 20px;
+}
+nav ul {
+list-style-type: none;
+display: flex;
+flex-direction: row;
+right:10px;
+width: 100%;
+z-index: 5;
+}
+nav ul li {
+display: inline-block;
+margin: 0 5px;
+padding: 1em 2em ;
+height: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: font-size 0.3s ease-in-out; 
+  }
+  nav ul li a:hover {
+    font-size: 1.5em; 
+    color: #f966b7;
+  }
+  nav li:hover, nav li:focus{
+    transform: scale(0.5s);
+  }
+
+.header{
+font-size: 20px;
+border: none;
+color: #f9f9f9;
+padding-left: 100px;
+}
+
+/*DROPDOWN BUTTON*/
+.dropbtn {
+background-color: #0a0a0af4;
+color: white;
+padding: 16px;
+left:auto;
+font-size: 16px;
+border: none;
+cursor: pointer;
+box-shadow:0px 5px 5px 3px  rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown {
+display: inline-block;
+position: fixed;
+margin-top: 10px;
+z-index: 999;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+
+height:200px;
+overflow: scroll;
+
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-family: Comic, cursive;
+}
+
+.dropdown-content a:hover {
+background-color: #e9b1d7
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+padding-bottom: 15px;
+background-color: #c0066cdd;
+}
+/**/
+
+.container{
+box-sizing: border-box;
+padding:9px 5px 15px 45px;
+margin-right: 45px;
+margin-left: 45px;
+margin-bottom: 19px;
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.2px);
+-webkit-backdrop-filter: blur(11.2px);
+border: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+
+ol {
+  counter-reset: step;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ol li {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+ol li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #0b474c;
+  color: #fff;
+  margin-left: -30px;
+  
+}
+
+/*back to top*/
+#MyButton{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(0, 0, 0); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#MyButton:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

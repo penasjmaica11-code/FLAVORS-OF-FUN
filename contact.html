@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLAVORS OF FUN</title>
+
+<link rel="icon" href="img\logo.png" type="image/x-icon">
+ 
+<style>
+  
+/*NAVIGATION*/
+nav{
+padding-top: 15px;
+padding-bottom: 20px;
+background-color: #060606;
+margin:0 0 20px 0;
+}
+nav ul {
+list-style-type: none;
+display: flex;
+flex-direction: row;
+right:10px;
+width: 100%;
+z-index: 5;
+}
+nav ul li {
+display: inline-block;
+margin: 0 5px;
+gap: 1em;
+height: 10px;
+margin-right: 45px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: font-size 0.3s ease-in-out; 
+  }
+  nav ul li a:hover {
+    font-size: 1.5em; 
+    color: #f966b7;
+  }
+  nav li:hover, nav li:focus{
+    transform: scale(0.5s);
+  }
+
+
+body{
+ background-color: #ffffff;
+ margin: 0;
+ padding: 0;
+}
+
+.contact p{
+  font-size: 30px;
+  margin-top: 90px;
+ margin-bottom: 55px;
+  text-align: center;
+  font-family: Comic, cursive;
+}
+.links{
+text-align: center;
+}
+.links a{
+color: #e44aea;
+ padding: 0.5rem;
+  text-decoration: none;
+  font-family: Comic, cursive;
+  font-size: 25px;
+  justify-content: center;
+  padding-bottom:80px;
+  transition: font-size  #a3deda  0.3s ease-in-out; 
+}
+.links a:hover{
+  font-size: 1.5em;
+
+}
+.con{
+  color:#0f7979;
+  font-family: Comic, cursive;
+  text-decoration: none;
+}
+
+.container_form{
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #060606;
+  font-family: serif;
+  background-color: #033131;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #101110;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.radio-button{
+    display: flex;
+   
+}
+</style>
+
+</head>
+  
+<div class="contact">
+<body>
+
+    <nav>  
+      <ul>
+      <li><a href="index.html">Home</a> &nbsp;</li>
+     <li><a href="recipe.html ">Recipe</a> &nbsp;</li> 
+      </ul>
+    </nav>
+    
+  <main >
+<div class="container_form"> 
+    <form>
+      <fieldset>
+   
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+       
+      <label for="howheard">How did you hear about us?</label>
+      <select id="howheard" name="howheard">
+        <option value="google">Google</option>
+        <option value="friend">Friend</option>
+        <option value="socialmedia">Social Media</option>
+        <option value="other">Other</option>
+      </select>
+    
+      <label>Would you visit again?</label>
+      <div class="radio-button">
+      <input type="radio" id="yes" name="visitagain" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="visitagain" value="no">
+      <label for="no">No</label>
+      <input type="radio" id="maybe" name="visitagain" value="maybe">
+      <label for="maybe">Maybe</label>
+    </div>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Your Comments"></textarea>
+    
+      <button type="submit">Submit review</button>
+    </div>
+      </fieldset>
+    </form>
+  </div>
+    <div class="links">
+    <center><p>If you wish to inquire for further information</p></center>
+   <p>Send us an<a href="mailto:example@example.com"id="profile-link"target="_blank"><strong class="con">EMAIL!</strong></a><br>
+    <a href="tel: 0912-345-6789 id="profile-link target="_blank"><strong class="con">CALL us!</strong></a></p>
+</main>
+
+
+<footer class="p">
+    <p>
+      <span style="color:rgb(6, 80, 80)">F</span>
+      <span style="color:rgb(174, 16, 24)">L</span>
+      <span style="color:rgb(163, 160, 9)">A</span>
+      <span style="color:rgb(40, 157, 14)">V</span>
+      <span style="color:rgb(21, 76, 76)">O</span>
+      <span style="color:rgb(236, 144, 7)">R</span>
+      <span style="color:rgb(237, 75, 11)">S</span>
+      &nbsp;
+      <span style="color:rgb(8, 62, 62)">o</span>
+      <span style="color:rgb(7, 43, 90)">f</span>
+      &nbsp;
+      <span style="color:rgb(35, 73, 73)">F</span>
+      <span style="color:rgb(48, 69, 9)">U</span>
+      <span style="color:rgb(255, 42, 0)">N</span>
+      <br>All rights Reserved 2024</p>
+ </footer>
+</body>
+</div>
+</html>

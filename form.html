@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Form</title>
+</head>
+<div class="container">
+<body>
+  <div class="login-wrap">
+    <div class="login-html">
+
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <section>
+      <div class="login-form">
+         <!--SIGN IN FORM-->
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label" >Username</label>
+            <input id="user" type="text" class="input" required>
+          </div>
+
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass"type="password" class="input" data-type="password" min="8" max="15" 
+            required>
+          </div>
+
+          <div class="group">
+            <input id="check" type="checkbox" class="check" checked>
+            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+          </div>
+          <div class="group">
+            <a href="index.html"><input type="submit" class="button" value="Sign In"></a>
+          </div>
+          
+        </div>
+      </section>
+        <!--SIGN UP FORM-->
+        <div class="sign-up-htm">
+          <div class="group">
+            <label for="user" class="label">Username</label>
+            <input id="user" type="text" class="input" required>
+          </div>
+
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="psw"  name="psw" type="password"  class="input" data-type="password" min="8" max="15" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter,
+             and at least 8 or more characters" required >
+          </div>
+          <!--MESSAGE IF THE PASSWORD IS INVALID-->
+          <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
+
+          <div class="group">
+            <label for="pass" class="label">Repeat Password</label>
+            <input id="pass" type="password" class="input" data-type="password" min="8" max="15" required>
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Email Address</label>
+            <input id="pass" type="text" class="input" required>
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+          </div>
+          <div class="hr"></div>
+         
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</div>
+</html>
